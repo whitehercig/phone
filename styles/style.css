@@ -1,0 +1,227 @@
+body{
+    background-color: #1f1f1f;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 27px;
+    
+    width: 66px;
+    height: 56px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+header {
+    height: 75px;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 30px;
+
+    flex: 1fr 2fr;
+}
+.left-section {
+    width: 240px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 10px 30px #00000099;
+    border-radius: 10px;
+    margin-left: 116px;
+}
+.logo {
+    width: 65px;
+    height: 65px;
+    margin-left: 23px;
+    border-radius: 35px;
+}
+.name {
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.item {
+    background-color: #d16666;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(255, 10, 10, 0.105);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.item button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+    border-width: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+.container {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  
+.left-menu {
+    width: 30%; /* Задает ширину меню */
+    color: #1f1f1f;
+    padding: 20px;
+    height: fit-content; /* Меню адаптируется по высоте содержимого */
+  }
+  
+  
+.left-menu button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+    border-width: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+  }
+  
+.left-menu button:hover {
+    transform: scale(1.05);
+  }
+/* Стили для заголовков секций */
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+/* Плавный скролл */
+html {
+  scroll-behavior: smooth;
+}

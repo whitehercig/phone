@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Tantuni Food - главная страница</title>
+</head>
+<body>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Меню</a></li>
+                <li><a class="menu__item" href="#">О нас</a></li>
+                <li><a class="menu__item" href="#">Контакты</a></li>
+                <div class="container">
+                    <!-- Левое меню -->
+                    <nav class="left-menu">
+                        <button class="left-menu-buttons" data-section="pizza">Пицца</button>
+                        <button class="left-menu-buttons" data-section="drinks">Напитки</button>
+                        <button class="left-menu-buttons" data-section="burgers">Бургеры</button>
+                        <button class="left-menu-buttons" data-section="wings">Крылышки</button>
+                        <button class="left-menu-buttons" data-section="doner">Донер</button>
+                    </nav>
+        </ul>
+      </div>
+    <div class="left-section">
+        <img class="logo" src="img/tantuni-logo.jpg" alt="">
+        <h1 class="name">TANTUNI <br> FOOD</h1>
+    </div>
+    <main>
+        <!-- Секция "Пицца" -->
+        <section class="menu" id="pizza">
+            <h2 class="section-title">Пицца</h2>
+            <div class="item">
+                <img src="img/piczcza-margarita.png" alt="Маргарита">
+                <h2>Маргарита</h2>
+                <p>Классическая пицца с томатным соусом и сыром.</p>
+                <button>1800 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/cheese-pizza.png" alt="Пепперони">
+                <h2>Пепперони</h2>
+                <p>Острая пицца с пепперони и сыром моцарелла.</p>
+                <button>2000 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/cheese-pizza.png" alt="Сырная">
+                <h2>Сырная</h2>
+                <p>Сырная пицца с нежным вкусом.</p>
+                <button>1900 tg</button>
+            </div>
+        </section>
+    
+        <!-- Секция "Бургеры" -->
+        <section class="menu" id="burgers">
+            <h2 class="section-title">Бургеры</h2>
+            <div class="item">
+                <img src="img/burger-classic.png" alt="Классический">
+                <h2>Классический бургер</h2>
+                <p>Сытный бургер с говядиной и свежими овощами.</p>
+                <button>1500 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/burger-cheese.png" alt="Чизбургер">
+                <h2>Чизбургер</h2>
+                <p>Сочная котлета с двойным сыром.</p>
+                <button>1600 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/burger-bbq.png" alt="BBQ">
+                <h2>Бургер BBQ</h2>
+                <p>С ароматом дымка и фирменным соусом BBQ.</p>
+                <button>1800 tg</button>
+            </div>
+        </section>
+    
+        <!-- Секция "Крылышки" -->
+        <section class="menu" id="wings">
+            <h2 class="section-title">Крылышки</h2>
+            <div class="item">
+                <img src="img/wings-classic.png" alt="Классические">
+                <h2>Классические крылышки</h2>
+                <p>Хрустящие и золотистые.</p>
+                <button>1200 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/wings-spicy.png" alt="Острые">
+                <h2>Острые крылышки</h2>
+                <p>С пикантным соусом.</p>
+                <button>1300 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/wings-bbq.png" alt="BBQ">
+                <h2>Крылышки BBQ</h2>
+                <p>С соусом барбекю и медом.</p>
+                <button>1400 tg</button>
+            </div>
+        </section>
+    
+        <!-- Секция "Донер" -->
+        <section class="menu" id="doner">
+            <h2 class="section-title">Донер</h2>
+            <div class="item">
+                <img src="img/doner-classic.png" alt="Классический">
+                <h2>Классический донер</h2>
+                <p>Говядина, овощи, свежий лаваш.</p>
+                <button>1000 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/doner-chicken.png" alt="Куриный">
+                <h2>Куриный донер</h2>
+                <p>Сочное куриное мясо и фирменный соус.</p>
+                <button>1100 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/doner-cheese.png" alt="Сырный">
+                <h2>Сырный донер</h2>
+                <p>Донер с добавлением плавленого сыра.</p>
+                <button>1200 tg</button>
+            </div>
+        </section>
+        <section class="menu" id="drinks">
+            <h2 class="section-title">Напитки</h2>
+            <div class="item">
+                <img src="img/doner-classic.png" alt="Классический">
+                <h2>Классический донер</h2>
+                <p>Говядина, овощи, свежий лаваш.</p>
+                <button>1000 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/doner-chicken.png" alt="Куриный">
+                <h2>Куриный донер</h2>
+                <p>Сочное куриное мясо и фирменный соус.</p>
+                <button>1100 tg</button>
+            </div>
+            <div class="item">
+                <img src="img/doner-cheese.png" alt="Сырный">
+                <h2>Сырный донер</h2>
+                <p>Донер с добавлением плавленого сыра.</p>
+                <button>1200 tg</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
