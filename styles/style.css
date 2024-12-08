@@ -3,8 +3,8 @@ body{
 }
 
 #menu__toggle {
-    opacity: 0;
-  }
+  display: none; /* Убираем визуально, но оставляем для функционала */
+}
   
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
